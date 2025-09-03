@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tu CSS personalizado */
+
+animation: var(--animate-pulse); /* pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite */
+
+@keyframes pulse {
+  50% {
+    opacity: 0.1;
+  }
+}
