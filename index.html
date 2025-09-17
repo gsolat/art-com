@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light"> <head>
+<html lang="es" data-theme="light" class="scroll-smooth"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guillermo Solano | DISEÑO - COMUNICACIÓN VISUAL</title>
@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<nav class="bg-red-50 p-8 shadow-md">
+<nav class="bg-transparent p-8 shadow-md">
   <div class="container mx-auto flex justify-between items-center">
     <a href="#" class="text-stone-700 text-2xl font-regular hover:text-blue-400 transition-colors duration-400 font-serif">
       TDGS
@@ -21,7 +21,7 @@
       </button>
     </div>
 
-    <div id="main-navigation-links" class="hidden md:flex md:space-x-8">
+    <div id="main-navigation-links" class="hidden md:flex md:space-x-8 bg-transparent">
       <a href="#inicio" class="text-stone-700 hover:text-blue-400 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-700">Inicio</a>
       <a href="#proyectos" class="text-stone-700 hover:text-blue-400 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-700">Proyectos</a>
       <a href="#contacto" class="text-stone-700 hover:text-blue-400 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-700">Contacto</a>
@@ -43,12 +43,19 @@
   </div>
 </nav>
 
-<section class="grid grid-cols-6 gap-3 bg-red-50 px-4 py-20 text-center h-screen">
+<section class="grid grid-cols-6 gap-3 bg-red-50 px-4 py-0 -mt-40 text-center h-screen bg-[url(../src/images/pelicano-gif.gif)] bg-cover bg-center bg-no-repeat items-end" id="small-v">
   <div class="z-1 col-span-6 lg:col-start-3 lg:col-span-2">
-    <img class="lg:scale-75 mix-blend-multiply opacity-100 hover:scale-150 duration-700" src="src/images/pelicano-gif.gif">
-    <div class="z-20 lg:-mt-80 -mt-60">
+      <h1 class="lg:text-6xl md:text-8xl text-4xl mb-2 font-serif font-light text-stone-700">TRAZO <i>de</i> GUÍA</h1>
+      <p class="text-sm leading-6 lg:text-xl mb-8 font-mono text-stone-700">Estudio de diseño y comunicación visual</p>
+  </div>
+</section>
+
+<section class="grid grid-cols-6 gap-3 bg-red-50 px-4 py-20 text-center h-screen hidden" id="large-v">
+  <div class="col-span-6 lg:col-start-3 lg:col-span-2">
+    <div class="lg:mt-80 mt-60">
       <h1 class="lg:text-6xl md:text-8xl text-5xl mb-4 font-serif font-light text-stone-700">TRAZO <i>de</i> GUÍA</h1>
       <p class="text-lg leading-6 md:text-2xl mb-8 font-mono text-stone-700">Estudio de diseño y comunicación visual</p>
+      <img class="lg:scale-75 mix-blend-multiply opacity-100 hover:scale-150 duration-700 -mt-80 -mt-60" src="src/images/pelicano-gif.gif">
     </div>
   </div>
 </section>
@@ -67,10 +74,10 @@
 </div>
 </section>
 
-<section class="grid grid-cols-6 mb-4 bg-red-50 px-4 py-20" id="projects">
+<section class="grid grid-cols-6 bg-red-50 px-4 py-10 " id="projects">
     <div class="collapse collapse-arrow bg-indigo-400 mb-4 lg:col-start-2 col-start-1 lg:col-span-4 col-span-6 rounded-box" id="...">
           <input type="checkbox" /> 
-                <div class="collapse-title font-serif text-2xl font-light text-left text-stone-50">
+                <div class="collapse-title font-mono text-xl font-light text-left text-stone-50">
                   Identidad Visual
                 </div>
           <div class="collapse-content"> 
@@ -96,10 +103,31 @@
               </div>
           </div>
     </div>
-  
+
+    <div class="collapse collapse-arrow bg-indigo-400 mb-4 lg:col-start-2 col-start-1 lg:col-span-4 col-span-6 rounded-box" id="...">
+          <input type="checkbox" /> 
+                <div class="collapse-title font-mono text-xl font-light text-left text-stone-50">
+                  Ilustración
+                </div>
+          <div class="collapse-content"> 
+              <div class="...">
+                <p class="py-6 font-mono text-sm text-left leading-5 text-stone-50">
+                      La imagen es el centro de la atención de los sentidos, esta es una selección de encargos de imágenes a la medida de artículos periodísticos.
+                </p>
+              </div>
+              <div class="grid lg:grid-cols-3 grid-col-1 gap-4">
+                  <div class="..."><img src="src/images/bdc-1.jpg" alt=""></div>
+                  <div class="..."><img src="src/images/bdc-2.jpg" alt=""></div>
+                  <div class="..."><img src="src/images/bdc-3.jpg" alt=""></div>
+                  <div class="..."><img src="src/images/bdc-4.jpg" alt=""></div>
+                  <div class="..."><img src="src/images/bdc-5.jpg" alt=""></div>
+                  <div class="..."><img src="src/images/bdc-6.jpg" alt=""></div>
+              </div>
+          </div>
+    </div>
 </section>
 
-      <section class="container mx-auto px-4 py-12">
+      <!-- <section class="container mx-auto px-4 py-12">
         <div class="collapse collapse-arrow bg-base-200 mb-4 rounded-box shadow-md" id="about-me">
             <input type="checkbox" /> 
             <div class="collapse-title text-xl font-medium text-blue-700">
@@ -163,9 +191,9 @@
                     <li>Metodologías Ágiles</li>
                 </ul>
             </div>
-        </div>
+        </div> 
 
-</section>
+</section>-->
 
     <!-- section class="container mx-auto px-4 py-12 bg-white rounded-lg shadow-xl my-8">
   <div class="flex flex-col md:flex-row items-center md:space-x-8">
