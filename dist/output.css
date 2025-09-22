@@ -1505,16 +1505,12 @@ video {
   grid-column: span 12 / span 12;
 }
 
-.col-span-6 {
-  grid-column: span 6 / span 6;
-}
-
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
+.col-span-6 {
+  grid-column: span 6 / span 6;
 }
 
 .col-span-8 {
@@ -1581,26 +1577,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.-mt-0 {
-  margin-top: -0px;
-}
-
-.-mt-60 {
-  margin-top: -15rem;
-}
-
-.-mt-80 {
-  margin-top: -20rem;
-}
-
-.-mt-20 {
-  margin-top: -5rem;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
 }
 
 .block {
@@ -1777,6 +1753,11 @@ video {
   background-color: rgb(129 140 248 / var(--tw-bg-opacity));
 }
 
+.bg-indigo-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+}
+
 .bg-red-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 242 242 / var(--tw-bg-opacity));
@@ -1791,56 +1772,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-indigo-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(165 180 252 / var(--tw-bg-opacity));
-}
-
-.bg-rose-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 164 175 / var(--tw-bg-opacity));
-}
-
-.bg-rose-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 205 211 / var(--tw-bg-opacity));
-}
-
-.bg-rose-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 228 230 / var(--tw-bg-opacity));
-}
-
-.bg-indigo-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(199 210 254 / var(--tw-bg-opacity));
-}
-
-.bg-indigo-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 48 163 / var(--tw-bg-opacity));
-}
-
-.bg-indigo-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
-}
-
-.bg-indigo-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\.\.\/src\/images\/pelicano-gif\.gif\)\] {
-  background-image: url(../src/images/pelicano-gif.gif);
-}
-
 .bg-\[url\(\.\.\/src\/images\/bg-crudo\.jpg\)\] {
   background-image: url(../src/images/bg-crudo.jpg);
 }
 
 .bg-\[url\(\.\.\/src\/images\/bg-ratio\.jpg\)\] {
   background-image: url(../src/images/bg-ratio.jpg);
+}
+
+.bg-\[url\(\.\.\/src\/images\/pelicano-gif\.gif\)\] {
+  background-image: url(../src/images/pelicano-gif.gif);
 }
 
 .bg-cover {
@@ -1853,14 +1794,6 @@ video {
 
 .bg-center {
   background-position: center;
-}
-
-.bg-top {
-  background-position: top;
-}
-
-.bg-bottom {
-  background-position: bottom;
 }
 
 .bg-no-repeat {
@@ -1886,6 +1819,11 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .px-3 {
@@ -1941,11 +1879,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .pl-5 {
@@ -2240,10 +2173,6 @@ animation: var(--animate-pulse);
 
   .lg\:col-span-8 {
     grid-column: span 8 / span 8;
-  }
-
-  .lg\:col-span-3 {
-    grid-column: span 3 / span 3;
   }
 
   .lg\:col-start-2 {
