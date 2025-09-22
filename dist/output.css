@@ -1876,6 +1876,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -2183,8 +2188,16 @@ animation: var(--animate-pulse);
     grid-column-start: 3;
   }
 
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:bg-fixed {
+    background-attachment: fixed;
   }
 
   .lg\:text-6xl {
