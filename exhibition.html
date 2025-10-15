@@ -10,7 +10,7 @@
 <nav class="bg-transparent p-8 shadow-md">
   <div class="container mx-auto flex justify-between items-center">
     <a href="#" class="text-stone-700 text-2xl font-regular hover:text-blue-400 transition-colors duration-400 font-serif">
-      TDGS
+      EXHIBIcion
     </a>
 
     <div class="md:hidden">
@@ -43,19 +43,50 @@
   </div>
 </nav>
 
-<section class="grid grid-cols-6 gap-3 bg-red-50 px-0 py-0 -mt-40 text-center h-screen bg-[url(../src/images/pelicano-gif.gif)] bg-cover bg-center bg-no-repeat lg:bg-fixed items-end" id="intro">
-  <div class="z-1 col-span-6 lg:col-start-3 lg:col-span-2">
-      <h1 class="lg:text-6xl md:text-8xl text-4xl mb-2 font-serif font-light text-stone-700">TRAZO <i>de</i> GUÍA</h1>
-      <p class="text-sm leading-6 lg:text-xl mb-8 font-mono text-stone-700">Laboratorio de diseño y arte</p>
-  </div>
-</section>
-
-<section class="grid grid-cols-10 lg:gap-3 bg-indigo-200 px-4 lg:py-40 py-20 lg:h-auto h-auto items-center" id="tdg">
-  <div class="col-start-1 col-span-7 lg:col-start-3 lg:col-span-3">
-    <img src="src/images/hipercubo.gif" alt="">
-  </div>
-  <div class="col-start-1 col-span-10 lg:col-start-5 lg:col-span-4 lg:-mt-80 -mt-5 pl-20">
-  <p class="lg:text-md text-sm lg:leading-6 leading-5 mb-4 font-mono text-stone-700">Se define como: una marca, una línea o señal inicial y preliminar que sirve como <b>referencia</b> y <b>orientación</b> para una acción o proceso posterior, que permita <b>gestionar desviaciones</b> y alcanzar un objetivo final con mayor <b>eficiencia.</b> Su función principal es <b>direccionar</b> o <b>estructurar</b> lo que se va a hacer a continuación, asegurando precisión en el resultado esperado.</p>
+<section class="grid grid-cols-10 lg:gap-3 bg-indigo-200 px-4 lg:py-40 py-20 items-center" id="tdg">
+  <!-- card 1 -->
+  <div class="col-span-10 lg:col-span-2 lg:col-start-2">
+     <div class="card bg-base-100 shadow-sm">
+        <figure>
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Card Title</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions justify-end">
+            <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+          </div>
+        </div>
+      </div>
+    <!-- modal -->
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+          <!-- gallery -->
+          <div class="carousel w-full rounded-box shadow-lg">
+          <div id="item1" class="carousel-item w-full">
+            <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp" alt="Burger" class="w-full object-cover" />
+          </div>
+          
+          <div id="item2" class="carousel-item w-full">
+            <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp" alt="Burger" class="w-full object-cover" />
+          </div>
+          
+          <div id="item3" class="carousel-item w-full">
+            <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp" alt="Burger" class="w-full object-cover" />
+          </div>
+      </div>
+      <div class="flex justify-center w-full py-2 gap-2 mt-4">
+        <a href="#item1" class="btn btn-xs">1</a> 
+        <a href="#item2" class="btn btn-xs">2</a> 
+        <a href="#item3" class="btn btn-xs">3</a>
+      </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
   </div>
 </section>
 
@@ -65,90 +96,14 @@
   </div>
 </section>
 
-<section class="grid grid-cols-10 gap-4 bg-stone-50 py-10" id="resultados">
-  <div class="col-start-1 col-span-10 lg:col-start-3 lg:col-span-6 pt-5">
-      <h2 class="text-xl text-left text-stone-700 font-light font-mono mb-10">
-        Resultados de procesos de diseño:
+<section class="grid grid-cols-10 bg-stone-50 py-10 bg-[url(../src/images/-crudo.jpg)] bg-cover bg-center bg-repeat lg:bg-fixed" id="resultados">
+  <!-- <div class="lg:col-start-5 lg:col-span-2 col-start-2 col-span-8">
+    <img src="src/images/estereoscopio.png" alt="">
+  </div> -->
+  <div class="col-start-1 col-span-10 lg:col-start-3 lg:col-span-6 px-4 pt-5">
+      <h2 class="text-xl text-left text-stone-700 font-light font-mono mb-10">Resultados de procesos de diseño:
       </h2>
-  </div>
-  <div class="bg-transparent mb-4 lg:col-start-3 col-start-1 lg:col-span-6 col-span-10 rounded-box" id="titulo-editorial">
-        <div class="text-stone-700">
-          <h1 class="font-mono text-sm font-light text-left tracking-widest"> DISEÑO EDITORIAL</h1> 
-          <br> <h1 class="font-mono text-xl">Laboratorio de periodismo ciudadano</h1>
-        </div>
-  </div>
-  <div class="col-start-3 col-span-2" id="texto-editorial">
-      <p class="font-mono text-sm text-left leading-6 text-stone-700">
-                    Una apuesta para potenciar 
-                    las capacidades narrativas e incentivar el rigor y la ética periodística.  
-                    También es una oportunidad para intercambiar conocimientos, problematizar hechos y recoger 
-                    la riqueza cultural local en una aproximación al periodismo móvil o <i>mobile journalism (MOJO)</i>
-                     soportado en herramientas básicas como teléfonos inteligentes e internet.
-      </p>
-      <p class="py-6 font-mono text-sm text-left leading-6 text-stone-700">
-                    Como resultado de la implementación de la acción se diseñó un producto comunicativo paa reseñar la experiencia,
-                    teniendo como inspiración la fragmentación y la estética del <i>copy and paste</i> para organizar la información
-                    en un formato ágil y práctico para difusión en medios digitales.
-                <a class="underline bg-gray-100 p-1" href=*.pdf download> Laboratorio de Periodismo Ciudadano con Enfoque Cultural.pdf</a>
-      </p>
-  </div>
-  <div class="lg:col-span-3 lg:col-start-6 col-span-10 gap-4">
-      <!-- gallery -->
-      <div class="carousel w-full rounded-box shadow-lg scroll-smooth">
-          <div id="item1" class="carousel-item w-full">
-            <img src="src/images/periodismo-cultural/lab-periodismo-1.jpg" alt="" class="w-full object-cover" />
-          </div>
-          <div id="item2" class="carousel-item w-full">
-            <img src="src/images/periodismo-cultural/lab-periodismo-2.jpg" alt="" class="w-full object-cover" />
-          </div>
-          <div id="item3" class="carousel-item w-full">
-            <img src="src/images/periodismo-cultural/lab-periodismo-3.jpg" alt="" class="w-full object-cover" />
-          </div>
-          <div id="item4" class="carousel-item w-full">
-            <img src="src/images/periodismo-cultural/lab-periodismo-4.jpg" alt="" class="w-full object-cover" />
-          </div>
-          <div id="item5" class="carousel-item w-full">
-            <img src="src/images/periodismo-cultural/lab-periodismo-5.jpg" alt="" class="w-full object-cover" />
-          </div>
-          <div id="item6" class="carousel-item w-full">
-            <img src="src/images/periodismo-cultural/lab-periodismo-6.jpg" alt="" class="w-full object-cover" />
-          </div>
-          <div id="item7" class="carousel-item w-full">
-            <img src="src/images/periodismo-cultural/lab-periodismo-7.jpg" alt="" class="w-full object-cover" />
-          </div>
-          <div id="item8" class="carousel-item w-full">
-            <img src="src/images/periodismo-cultural/lab-periodismo-8.jpg" alt="" class="w-full object-cover" />
-          </div>
-          <div id="item9" class="carousel-item w-full">
-            <img src="src/images/periodismo-cultural/lab-periodismo-9.jpg" alt="" class="w-full object-cover" />
-          </div>
-          <div id="item10" class="carousel-item w-full">
-            <img src="src/images/periodismo-cultural/lab-periodismo-10.jpg" alt="" class="w-full object-cover" />
-          </div>
-          <div id="item11" class="carousel-item w-full">
-            <img src="src/images/periodismo-cultural/lab-periodismo-11.jpg" alt="" class="w-full object-cover" />
-          </div>
-          <div id="item12" class="carousel-item w-full">
-            <img src="src/images/periodismo-cultural/lab-periodismo-12.jpg" alt="" class="w-full object-cover" />
-          </div>
-        
-      </div>
-      <div class="flex justify-center w-full py-2 gap-2 mt-4">
-        <button data-target="#item1" class="btn btn-xs carousel-btn">1</button> 
-        <button data-target="#item2" class="btn btn-xs carousel-btn">2</button> 
-        <button data-target="#item3" class="btn btn-xs">3</button>
-        <button data-target="#item4" class="btn btn-xs">4</button> 
-        <button data-target="#item5" class="btn btn-xs">5</a> 
-        <button data-target="#item6" class="btn btn-xs">6</a>
-        <button data-target="#item7" class="btn btn-xs">7</a> 
-        <button data-target="#item8" class="btn btn-xs">8</a> 
-        <button data-target="#item9" class="btn btn-xs">9</a>
-        <button data-target="#item10" class="btn btn-xs">10</a> 
-        <button data-target="#item11" class="btn btn-xs">11</a> 
-        <button data-target="#item12" class="btn btn-xs">12</a>
-      </div>
-    </div>
-
+</div>
     <div class="collapse collapse-arrow bg-transparent mb-4 lg:col-start-3 col-start-1 lg:col-span-6 col-span-10 rounded-box" id="...">
           <input type="checkbox" /> 
                 <div class="collapse-title text-stone-700">
@@ -279,10 +234,109 @@
   </div>
   <div class="col-start-3 col-span-10 lg:col-start-8 lg:col-span-2 flex flex-col items-start">
     <a href="https://www.instagram.com/elsolardelosdistraidos/" class="leading-5 mb-2 font-mono text-stone-50 hover:text-blue-400">Insta</a>
-    <a href="exhibition.html" class="leading-5 mb-2 font-mono text-stone-50 hover:text-blue-400">Blog</a>
+    <a href="#" class="leading-5 mb-2 font-mono text-stone-50 hover:text-blue-400">Blog</a>
   </div>
   
 </section>
+
+      <!-- <section class="container mx-auto px-4 py-12">
+        <div class="collapse collapse-arrow bg-base-200 mb-4 rounded-box shadow-md" id="about-me">
+            <input type="checkbox" /> 
+            <div class="collapse-title text-xl font-medium text-blue-700">
+                Sobre Mí: Mi Viaje en el Desarrollo Web
+            </div>
+            <div class="collapse-content"> 
+                <p class="py-4 text-gray-700 leading-relaxed">
+                    Comencé mi viaje en el desarrollo web hace [X] años, fascinado por la capacidad de transformar ideas en experiencias interactivas. Mi enfoque principal ha sido en el desarrollo frontend, con un interés particular en la usabilidad y la creación de interfaces intuitivas. He trabajado en proyectos que van desde [menciona tipo de proyecto 1] hasta [menciona tipo de proyecto 2], siempre buscando aprender y aplicar las últimas tecnologías.
+                </p>
+                <button class="btn btn-sm btn-outline btn-info mt-2">Descargar CV</button>
+            </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200 mb-4 rounded-box shadow-md">
+            <input type="checkbox" /> 
+            <div class="collapse-title text-xl font-medium text-green-700">
+                Casos de Estudio: Proyectos Destacados
+            </div>
+            <div class="collapse-content"> 
+                <h3 class="font-bold text-lg mb-2">Plataforma de Gestión de Contenido</h3>
+                <p class="py-2 text-gray-700">
+                    Desarrollo de un CMS personalizado para [cliente/tipo de uso], que permitía a los usuarios [funcionalidad clave]. Se implementó un sistema de arrastrar y soltar para la edición, mejorando la eficiencia en un 40%.
+                </p>
+                <ul class="list-disc pl-5 py-2 text-gray-600">
+                    <li>**Tecnologías:** HTML, CSS (Tailwind), JavaScript, Node.js (API Rest)</li>
+                    <li>**Resultados:** Aumento de la productividad del equipo editorial.</li>
+                </ul>
+                <button class="btn btn-sm btn-outline btn-primary mt-2">Ver Demo</button>
+                <button class="btn btn-sm btn-outline btn-secondary ml-2 mt-2">Código (GitHub)</button>
+
+                <div class="divider"></div> <h3 class="font-bold text-lg mb-2">Aplicación de Listas de Tareas Colaborativas</h3>
+                <p class="py-2 text-gray-700">
+                    Una aplicación web para equipos pequeños, facilitando la creación y seguimiento de tareas en tiempo real.
+                </p>
+                <ul class="list-disc pl-5 py-2 text-gray-600">
+                    <li>**Tecnologías:** HTML, CSS (Tailwind), JavaScript (APIs), Firebase</li>
+                    <li>**Resultados:** Mejoró la coordinación de equipos remotos.</li>
+                </ul>
+                <button class="btn btn-sm btn-outline btn-primary mt-2">Ver Demo</button>
+            </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200 mb-4 rounded-box shadow-md">
+            <input type="checkbox" /> 
+            <div class="collapse-title text-xl font-medium text-purple-700">
+                Mis Habilidades Técnicas
+            </div>
+            <div class="collapse-content"> 
+                <h3 class="font-bold text-lg mb-2">Front-end</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700">
+                    <li>HTML5 & CSS3 (Flexbox, Grid)</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>Tailwind CSS, PostCSS</li>
+                    <li>Conceptos de UI/UX</li>
+                </ul>
+                <h3 class="font-bold text-lg mt-4 mb-2">Herramientas & Otros</h3>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700">
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                    <li>Figma (básico)</li>
+                    <li>Metodologías Ágiles</li>
+                </ul>
+            </div>
+        </div> 
+
+</section>-->
+
+    <!-- section class="container mx-auto px-4 py-12 bg-white rounded-lg shadow-xl my-8">
+  <div class="flex flex-col md:flex-row items-center md:space-x-8">
+    <div class="flex-shrink-0 mb-6 md:mb-0">
+      <img
+        src="https://via.placeholder.com/250"
+        alt="Foto de Perfil de Guillermo Solano"
+        class="w-60 h-60 rounded-full object-cover border-4 border-blue-500 shadow-md"
+      />
+    </div>
+
+    <div class="text-center md:text-left">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">
+        ¡Hola! Soy Guillermo Solano
+      </h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-4">
+        Soy un apasionado desarrollador Front-end con [X años] de experiencia en la creación de interfaces de usuario atractivas e intuitivas. Mi enfoque principal reside en transformar diseños complejos en experiencias web funcionales y responsivas. Me especializo en [menciona tus tecnologías principales, ej. **HTML5**, **CSS3**, **JavaScript** y **Vue.js**], y disfruto profundamente el desafío de optimizar el rendimiento y la usabilidad para ofrecer soluciones innovadoras.
+      </p>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Más allá del código, me interesa [menciona un hobby o interés relevante, ej. el diseño UX, la fotografía o el aprendizaje continuo de nuevas tecnologías]. Estoy siempre en busca de nuevos retos y oportunidades para contribuir en proyectos significativos.
+      </p>
+      <a href="#contact" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+        Contáctame
+      </a>
+    </div>
+  </div>
+</section-->
+
+<!-- <a href="#about-me" class="btn btn-primary btn-lg transform hover:scale-105 transition-transform duration-300">
+            Conoce Más
+  </a> -->
 
     <footer class="bg-indigo-950 font-mono text-xs text-stone-50 p-6 text-center mt-auto">
         <p>&copy; 2025 Guillermo Solano. Todos los derechos reservados.</p>
@@ -320,36 +374,6 @@
       mobileMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', closeMenu);
       });
-    }
-  });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const carousel = document.getElementById('myCarousel');
-    const controls = document.getElementById('carousel-controls');
-
-    if (carousel && controls) {
-        // Escucha clics en el contenedor de botones
-        controls.addEventListener('click', function(event) {
-            const targetButton = event.target.closest('.carousel-btn');
-
-            if (targetButton) {
-                // Previene el comportamiento por defecto de ancla (aunque ya son botones)
-                event.preventDefault(); 
-                
-                const targetId = targetButton.getAttribute('data-target');
-                const targetItem = document.getElementById(targetId);
-
-                if (targetItem) {
-                    // La magia: usa scrollIntoView para desplazar el ítem dentro del carrusel
-                    // block: 'nearest' asegura que el ítem sea visible sin mover el viewport
-                    targetItem.scrollIntoView({
-                        behavior: 'smooth',
-                        inline: 'start', // Desplaza el ítem al inicio del contenedor
-                        block: 'nearest' // Evita que la página principal se mueva
-                    });
-                }
-            }
-        });
     }
   });
 </script>
