@@ -43,52 +43,96 @@
   </div>
 </nav>
 
-<section class="grid grid-cols-10 lg:gap-3 bg-indigo-200 px-4 lg:py-40 py-20 items-center" id="tdg">
-  <!-- card 1 -->
-  <div class="col-span-10 lg:col-span-2 lg:col-start-2">
+<section class="grid grid-cols-11 lg:gap-8 bg-indigo-200 px-8 lg:py-40 py-20 items-center" id="tdg">
+  
+  <!-- card 2 -->
+
+  <div class="col-span-11 lg:col-span-3 lg:col-start-2">
      <div class="card bg-base-100 shadow-sm">
         <figure>
           <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes" />
+            src="src/images/trazo/volatilidad.png"
+            alt="image" />
         </figure>
         <div class="card-body">
-          <h2 class="card-title">Card Title</h2>
-          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <h2 class="card-title text-stone-500">La Sabiduría de la serpiente</h2>
+          <p class="lg:text-md text-sm lg:leading-6 leading-5 mb-4 font-mono text-stone-500">
+            4000px<br>
+            Digital<br>
+            2022<br>
+          </p>
           <div class="card-actions justify-end">
-            <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+            <button class="btn" onclick="my_modal_2.showModal()">ver</button>
           </div>
         </div>
       </div>
     <!-- modal -->
-      <dialog id="my_modal_1" class="modal">
-        <div class="modal-box">
+      <dialog id="my_modal_2" class="modal">
+        <div class="modal-box w-full max-w-xl p-0 bg-transparent">
           <!-- gallery -->
           <div class="carousel w-full rounded-box shadow-lg">
-          <div id="item1" class="carousel-item w-full">
-            <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp" alt="Burger" class="w-full object-cover" />
+            <div id="item1" class="carousel-item w-full">
+              <img src="src/images/trazo/volatilidad.png" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+            </div>
           </div>
-          
-          <div id="item2" class="carousel-item w-full">
-            <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp" alt="Burger" class="w-full object-cover" />
-          </div>
-          
-          <div id="item3" class="carousel-item w-full">
-            <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp" alt="Burger" class="w-full object-cover" />
-          </div>
-      </div>
-      <div class="flex justify-center w-full py-2 gap-2 mt-4">
-        <a href="#item1" class="btn btn-xs">1</a> 
-        <a href="#item2" class="btn btn-xs">2</a> 
-        <a href="#item3" class="btn btn-xs">3</a>
-      </div>
+          <!-- <div class="flex justify-center w-full py-2 gap-2 mt-4">
+            <a href="#item1" class="btn btn-xs">1</a> 
+            <a href="#item2" class="btn btn-xs">2</a> 
+            <a href="#item3" class="btn btn-xs">3</a>
+          </div> -->
         </div>
         <form method="dialog" class="modal-backdrop">
           <button>close</button>
         </form>
       </dialog>
   </div>
+
+  <!-- card 1 -->
+
+  <div class="col-span-11 lg:col-span-3">
+     <div class="card bg-base-100 shadow-sm">
+        <figure>
+          <img
+            src="src/images/trazo/la-sabiduria-de-la-serpiente.jpg"
+            alt="image" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-stone-500">La Sabiduría de la serpiente</h2>
+          <p class="lg:text-md text-sm lg:leading-6 leading-5 mb-4 font-mono text-stone-500">
+            4000px<br>
+            Digital<br>
+            2022<br>
+          </p>
+          <div class="card-actions justify-end">
+            <button class="btn" onclick="my_modal_1.showModal()">ver</button>
+          </div>
+        </div>
+      </div>
+    <!-- modal -->
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box w-full max-w-6xl p-0 bg-transparent">
+          <!-- gallery -->
+          <div class="carousel w-full rounded-box shadow-lg">
+            <div id="item1" class="carousel-item w-full">
+              <img src="src/images/trazo/la-sabiduria-de-la-serpiente.jpg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+            </div>
+          </div>
+          <!-- <div class="flex justify-center w-full py-2 gap-2 mt-4">
+            <a href="#item1" class="btn btn-xs">1</a> 
+            <a href="#item2" class="btn btn-xs">2</a> 
+            <a href="#item3" class="btn btn-xs">3</a>
+          </div> -->
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+  </div>
+
+
 </section>
+
+<!-- FIN -->
 
 <section class="grid grid-cols-10 bg-indigo-500 px-4 py-20 h-3/4" id="proceso">
   <div class="col-start-1 col-span-10 lg:col-start-3 lg:col-span-6">
