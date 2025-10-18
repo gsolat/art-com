@@ -43,7 +43,7 @@
   </div>
 </nav>
 
-<section class="grid grid-cols-11 lg:gap-8 bg-indigo-200 px-8 lg:py-40 py-20 items-center" id="tdg">
+<section class="grid grid-cols-11 lg:gap-8 gap-8 bg-zinc-500 px-8 lg:py-40 py-20 items-center" id="tdg">
   
   <!-- card 2 -->
 
@@ -51,15 +51,14 @@
      <div class="card bg-base-100 shadow-sm">
         <figure>
           <img
-            src="src/images/trazo/volatilidad.png"
+            src="src/images/trazo/la-ilusion-del-cazador.jpg"
             alt="image" />
         </figure>
         <div class="card-body">
-          <h2 class="card-title text-stone-500">La Sabiduría de la serpiente</h2>
+          <h2 class="card-title text-stone-500 font-mono font-light">La ilusión del cazador</h2>
           <p class="lg:text-md text-sm lg:leading-6 leading-5 mb-4 font-mono text-stone-500">
-            4000px<br>
             Digital<br>
-            2022<br>
+            2025<br>
           </p>
           <div class="card-actions justify-end">
             <button class="btn" onclick="my_modal_2.showModal()">ver</button>
@@ -68,18 +67,16 @@
       </div>
     <!-- modal -->
       <dialog id="my_modal_2" class="modal">
-        <div class="modal-box w-full max-w-xl p-0 bg-transparent">
-          <!-- gallery -->
-          <div class="carousel w-full rounded-box shadow-lg">
-            <div id="item1" class="carousel-item w-full">
-              <img src="src/images/trazo/volatilidad.png" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+        <div class="modal-box w-full max-w-6xl p-0 bg-zinc-100">
+            <div class="w-full">
+              <img src="src/images/trazo/la-ilusion-del-cazador.jpg" alt="La ilusión del cazador" class="w-full object-cover" />
             </div>
-          </div>
-          <!-- <div class="flex justify-center w-full py-2 gap-2 mt-4">
-            <a href="#item1" class="btn btn-xs">1</a> 
-            <a href="#item2" class="btn btn-xs">2</a> 
-            <a href="#item3" class="btn btn-xs">3</a>
-          </div> -->
+            <div>
+              <p class="font-mono text-sm px-4 pt-4 pb-10">La distancia entre la mirada y el objeto<br>
+                Digital<br>
+                2025<br>
+              </p>
+            </div>
         </div>
         <form method="dialog" class="modal-backdrop">
           <button>close</button>
@@ -93,15 +90,18 @@
      <div class="card bg-base-100 shadow-sm">
         <figure>
           <img
-            src="src/images/trazo/la-sabiduria-de-la-serpiente.jpg"
+            src="src/images/trazo/pareidolia.gif"
             alt="image" />
         </figure>
         <div class="card-body">
-          <h2 class="card-title text-stone-500">La Sabiduría de la serpiente</h2>
-          <p class="lg:text-md text-sm lg:leading-6 leading-5 mb-4 font-mono text-stone-500">
-            4000px<br>
-            Digital<br>
-            2022<br>
+          <h2 class="card-title text-stone-500 font-mono font-light">Pareidolia</h2>
+          <p class="lg:text-md text-xs lg:leading-5 leading-5 mb-4 font-mono text-stone-500">
+            Dibujo expandido al material, formas tomadas de vectores y convertidas en objetos geométricos en madera, 
+            que recrean rostros de personajes zoantrópicos de rasgos anímicos o sobrenaturales.</p>
+          <p class="lg:text-md text-xs lg:leading-5 leading-5 mb-4 font-mono text-stone-500">
+            Acrílico sobre madera<br> 
+            35 x 35 cm (cada pieza)<br>
+            2025<br>
           </p>
           <div class="card-actions justify-end">
             <button class="btn" onclick="my_modal_1.showModal()">ver</button>
@@ -110,11 +110,20 @@
       </div>
     <!-- modal -->
       <dialog id="my_modal_1" class="modal">
-        <div class="modal-box w-full max-w-6xl p-0 bg-transparent">
+        <div class="modal-box w-full max-w-xl p-0 bg-transparent">
           <!-- gallery -->
-          <div class="carousel w-full rounded-box shadow-lg">
+          <div class="carousel carousel-start w-full rounded-box shadow-lg">
             <div id="item1" class="carousel-item w-full">
-              <img src="src/images/trazo/la-sabiduria-de-la-serpiente.jpg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+              <img src="src/images/trazo/p-01.jpeg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+            </div>
+            <div id="item2" class="carousel-item w-full">
+              <img src="src/images/trazo/p-02.jpeg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+            </div>
+            <div id="item3" class="carousel-item w-full">
+              <img src="src/images/trazo/p-03.jpeg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+            </div>
+            <div id="item4" class="carousel-item w-full">
+              <img src="src/images/trazo/p-04.jpeg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
             </div>
           </div>
           <!-- <div class="flex justify-center w-full py-2 gap-2 mt-4">
@@ -283,104 +292,6 @@
   
 </section>
 
-      <!-- <section class="container mx-auto px-4 py-12">
-        <div class="collapse collapse-arrow bg-base-200 mb-4 rounded-box shadow-md" id="about-me">
-            <input type="checkbox" /> 
-            <div class="collapse-title text-xl font-medium text-blue-700">
-                Sobre Mí: Mi Viaje en el Desarrollo Web
-            </div>
-            <div class="collapse-content"> 
-                <p class="py-4 text-gray-700 leading-relaxed">
-                    Comencé mi viaje en el desarrollo web hace [X] años, fascinado por la capacidad de transformar ideas en experiencias interactivas. Mi enfoque principal ha sido en el desarrollo frontend, con un interés particular en la usabilidad y la creación de interfaces intuitivas. He trabajado en proyectos que van desde [menciona tipo de proyecto 1] hasta [menciona tipo de proyecto 2], siempre buscando aprender y aplicar las últimas tecnologías.
-                </p>
-                <button class="btn btn-sm btn-outline btn-info mt-2">Descargar CV</button>
-            </div>
-        </div>
-
-        <div class="collapse collapse-arrow bg-base-200 mb-4 rounded-box shadow-md">
-            <input type="checkbox" /> 
-            <div class="collapse-title text-xl font-medium text-green-700">
-                Casos de Estudio: Proyectos Destacados
-            </div>
-            <div class="collapse-content"> 
-                <h3 class="font-bold text-lg mb-2">Plataforma de Gestión de Contenido</h3>
-                <p class="py-2 text-gray-700">
-                    Desarrollo de un CMS personalizado para [cliente/tipo de uso], que permitía a los usuarios [funcionalidad clave]. Se implementó un sistema de arrastrar y soltar para la edición, mejorando la eficiencia en un 40%.
-                </p>
-                <ul class="list-disc pl-5 py-2 text-gray-600">
-                    <li>**Tecnologías:** HTML, CSS (Tailwind), JavaScript, Node.js (API Rest)</li>
-                    <li>**Resultados:** Aumento de la productividad del equipo editorial.</li>
-                </ul>
-                <button class="btn btn-sm btn-outline btn-primary mt-2">Ver Demo</button>
-                <button class="btn btn-sm btn-outline btn-secondary ml-2 mt-2">Código (GitHub)</button>
-
-                <div class="divider"></div> <h3 class="font-bold text-lg mb-2">Aplicación de Listas de Tareas Colaborativas</h3>
-                <p class="py-2 text-gray-700">
-                    Una aplicación web para equipos pequeños, facilitando la creación y seguimiento de tareas en tiempo real.
-                </p>
-                <ul class="list-disc pl-5 py-2 text-gray-600">
-                    <li>**Tecnologías:** HTML, CSS (Tailwind), JavaScript (APIs), Firebase</li>
-                    <li>**Resultados:** Mejoró la coordinación de equipos remotos.</li>
-                </ul>
-                <button class="btn btn-sm btn-outline btn-primary mt-2">Ver Demo</button>
-            </div>
-        </div>
-
-        <div class="collapse collapse-arrow bg-base-200 mb-4 rounded-box shadow-md">
-            <input type="checkbox" /> 
-            <div class="collapse-title text-xl font-medium text-purple-700">
-                Mis Habilidades Técnicas
-            </div>
-            <div class="collapse-content"> 
-                <h3 class="font-bold text-lg mb-2">Front-end</h3>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700">
-                    <li>HTML5 & CSS3 (Flexbox, Grid)</li>
-                    <li>JavaScript (ES6+)</li>
-                    <li>Tailwind CSS, PostCSS</li>
-                    <li>Conceptos de UI/UX</li>
-                </ul>
-                <h3 class="font-bold text-lg mt-4 mb-2">Herramientas & Otros</h3>
-                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700">
-                    <li>Git & GitHub</li>
-                    <li>VS Code</li>
-                    <li>Figma (básico)</li>
-                    <li>Metodologías Ágiles</li>
-                </ul>
-            </div>
-        </div> 
-
-</section>-->
-
-    <!-- section class="container mx-auto px-4 py-12 bg-white rounded-lg shadow-xl my-8">
-  <div class="flex flex-col md:flex-row items-center md:space-x-8">
-    <div class="flex-shrink-0 mb-6 md:mb-0">
-      <img
-        src="https://via.placeholder.com/250"
-        alt="Foto de Perfil de Guillermo Solano"
-        class="w-60 h-60 rounded-full object-cover border-4 border-blue-500 shadow-md"
-      />
-    </div>
-
-    <div class="text-center md:text-left">
-      <h2 class="text-4xl font-bold text-gray-800 mb-4">
-        ¡Hola! Soy Guillermo Solano
-      </h2>
-      <p class="text-lg text-gray-700 leading-relaxed mb-4">
-        Soy un apasionado desarrollador Front-end con [X años] de experiencia en la creación de interfaces de usuario atractivas e intuitivas. Mi enfoque principal reside en transformar diseños complejos en experiencias web funcionales y responsivas. Me especializo en [menciona tus tecnologías principales, ej. **HTML5**, **CSS3**, **JavaScript** y **Vue.js**], y disfruto profundamente el desafío de optimizar el rendimiento y la usabilidad para ofrecer soluciones innovadoras.
-      </p>
-      <p class="text-lg text-gray-700 leading-relaxed">
-        Más allá del código, me interesa [menciona un hobby o interés relevante, ej. el diseño UX, la fotografía o el aprendizaje continuo de nuevas tecnologías]. Estoy siempre en busca de nuevos retos y oportunidades para contribuir en proyectos significativos.
-      </p>
-      <a href="#contact" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
-        Contáctame
-      </a>
-    </div>
-  </div>
-</section-->
-
-<!-- <a href="#about-me" class="btn btn-primary btn-lg transform hover:scale-105 transition-transform duration-300">
-            Conoce Más
-  </a> -->
 
     <footer class="bg-indigo-950 font-mono text-xs text-stone-50 p-6 text-center mt-auto">
         <p>&copy; 2025 Guillermo Solano. Todos los derechos reservados.</p>
