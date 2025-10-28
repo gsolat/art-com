@@ -2,7 +2,7 @@
 <html lang="es" data-theme="light" class="scroll-smooth"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guillermo Solano | DISEÑO - COMUNICACIÓN VISUAL</title>
+    <title>Futuro Disperso | Trazo de guía</title>
     <link href="./dist/output.css" rel="stylesheet">
 </head>
 <body>
@@ -43,26 +43,125 @@
   </div>
 </nav>
 
-<section class="grid grid-cols-11 lg:gap-8 gap-8 bg-zinc-500 px-8 lg:py-40 py-20 items-center" id="tdg">
+<section class="grid grid-cols-11 lg:gap-8 gap-8 bg-zinc-500 px-8 lg:py-40 py-20" id="tdg">
+
+<!-- card 4 -->
+
+  <div class="col-span-11 lg:col-span-3 lg:col-start-2">
+     <div class="card card-sm bg-base-100 shadow-sm">
+        <figure>
+          <a onclick="my_modal_4.showModal()">
+          <img
+            src="src/images/trazo/cinco-intentos-de-construir-cultura.jpg"
+            alt="image" />
+            </a>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-sm text-stone-500 font-mono font-light">Cinco intentos de construir cultura</h2>
+          <p class="lg:text-md text-xs lg:leading-5 leading-5 font-mono text-stone-500">
+            Videoinstalación<br> 
+            2024<br>
+          </p>
+          <!-- <div class="card-actions justify-end">
+            <button class="btn" onclick="my_modal_3.showModal()">ver</button>
+          </div> -->
+        </div>
+      </div>
+    <!-- modal -->
+      <dialog id="my_modal_4" class="modal">
+        <div class="modal-box w-full max-w-6xl p-0 bg-transparent">
+          <div class="col-span-10 lg:col-span-8 lg:col-start-2">
+              <div class="aspect-video w-full rounded-lg shadow-xl overflow-hidden">
+                  <iframe 
+                      class="w-full h-full" 
+                      src="https://www.youtube.com/embed/JS7_tOrCzU8?si=10L_yHy41yax-VX4"
+                      title="Cinco intentos de construir cultura" 
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen
+                  ></iframe>
+              </div>
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+  </div>
+
+  <!-- card 3 -->
+
+  <div class="col-span-11 lg:col-span-3 lg:col-start-2">
+     <div class="card card-sm bg-base-100 shadow-sm">
+        <figure>
+          <a onclick="my_modal_3.showModal()">
+          <img
+            src="src/images/trazo/atencion-selectiva-00.jpg"
+            alt="image" />
+            </a>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-sm text-stone-500 font-mono font-light">Atención selectiva</h2>
+          <p class="lg:text-md text-xs lg:leading-5 leading-5 font-mono text-stone-500">
+            Mixta<br> 
+            18 x 24 cm (cada pieza)<br>
+            2024<br>
+          </p>
+          <!-- <div class="card-actions justify-end">
+            <button class="btn" onclick="my_modal_3.showModal()">ver</button>
+          </div> -->
+        </div>
+      </div>
+    <!-- modal -->
+      <dialog id="my_modal_3" class="modal">
+        <div class="modal-box w-full max-w-6xl p-0 bg-transparent">
+          <!-- gallery -->
+          <div class="carousel carousel-start w-full rounded-box shadow-lg">
+            <div id="item1" class="carousel-item w-full">
+              <img src="src/images/trazo/atencion-selectiva-01.jpg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+            </div>
+            <div id="item2" class="carousel-item w-full">
+              <img src="src/images/trazo/atencion-selectiva-02.jpg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+            </div>
+            <div id="item3" class="carousel-item w-full">
+              <img src="src/images/trazo/atencion-selectiva-03.jpg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+            </div>
+            <div id="item4" class="carousel-item w-full">
+              <img src="src/images/trazo/atencion-selectiva-04.jpg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+            </div>
+          </div>
+          <!-- <div class="flex justify-center w-full py-2 gap-2 mt-4">
+            <a href="#item1" class="btn btn-xs">1</a> 
+            <a href="#item2" class="btn btn-xs">2</a> 
+            <a href="#item3" class="btn btn-xs">3</a>
+          </div> -->
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+  </div>
   
   <!-- card 2 -->
 
-  <div class="col-span-11 lg:col-span-3 lg:col-start-2">
+  <div class="col-span-11 lg:col-span-3 lg:col-start-0">
      <div class="card bg-base-100 shadow-sm">
         <figure>
+          <a onclick="my_modal_2.showModal()">
           <img
             src="src/images/trazo/la-ilusion-del-cazador.jpg"
             alt="image" />
+          </a>
         </figure>
         <div class="card-body">
-          <h2 class="card-title text-stone-500 font-mono font-light">La ilusión del cazador</h2>
-          <p class="lg:text-md text-sm lg:leading-6 leading-5 mb-4 font-mono text-stone-500">
+          <h2 class="card-title text-sm text-stone-500 font-mono font-light">La ilusión del cazador</h2>
+          <p class="lg:text-md text-xs leading-5 font-mono text-stone-500">
             Digital<br>
             2025<br>
           </p>
-          <div class="card-actions justify-end">
+          <!-- <div class="card-actions justify-end">
             <button class="btn" onclick="my_modal_2.showModal()">ver</button>
-          </div>
+          </div> -->
         </div>
       </div>
     <!-- modal -->
@@ -87,25 +186,27 @@
   <!-- card 1 -->
 
   <div class="col-span-11 lg:col-span-3">
-     <div class="card bg-base-100 shadow-sm">
+     <div class="card card-sm bg-base-100 shadow-sm">
         <figure>
+          <a onclick="my_modal_1.showModal()">
           <img
             src="src/images/trazo/pareidolia.gif"
             alt="image" />
+          </a>
         </figure>
         <div class="card-body">
-          <h2 class="card-title text-stone-500 font-mono font-light">Pareidolia</h2>
+          <h2 class="card-title text-sm text-stone-500 font-mono font-light">Pareidolia</h2>
           <p class="lg:text-md text-xs lg:leading-5 leading-5 mb-4 font-mono text-stone-500">
             Dibujo expandido al material, formas tomadas de vectores y convertidas en objetos geométricos en madera, 
             que recrean rostros de personajes zoantrópicos de rasgos anímicos o sobrenaturales.</p>
-          <p class="lg:text-md text-xs lg:leading-5 leading-5 mb-4 font-mono text-stone-500">
+          <p class="lg:text-md text-xs lg:leading-5 leading-5 font-mono text-stone-500">
             Acrílico sobre madera<br> 
             35 x 35 cm (cada pieza)<br>
             2025<br>
           </p>
-          <div class="card-actions justify-end">
+          <!-- <div class="card-actions justify-end">
             <button class="btn" onclick="my_modal_1.showModal()">ver</button>
-          </div>
+          </div> -->
         </div>
       </div>
     <!-- modal -->
@@ -149,10 +250,7 @@
   </div>
 </section>
 
-<section class="grid grid-cols-10 bg-stone-50 py-10 bg-[url(../src/images/-crudo.jpg)] bg-cover bg-center bg-repeat lg:bg-fixed" id="resultados">
-  <!-- <div class="lg:col-start-5 lg:col-span-2 col-start-2 col-span-8">
-    <img src="src/images/estereoscopio.png" alt="">
-  </div> -->
+<!-- <section class="grid grid-cols-10 bg-stone-50 py-10 bg-[url(../src/images/-crudo.jpg)] bg-cover bg-center bg-repeat lg:bg-fixed" id="resultados">
   <div class="col-start-1 col-span-10 lg:col-start-3 lg:col-span-6 px-4 pt-5">
       <h2 class="text-xl text-left text-stone-700 font-light font-mono mb-10">Resultados de procesos de diseño:
       </h2>
@@ -255,9 +353,9 @@
               </div>
           </div>
     </div>
-</section>
+</section> -->
 
-<section class="grid grid-cols-10 gap-4 bg-stone-400 px-4 py-20 h-3/4" id="vitrina">
+<!-- <section class="grid grid-cols-10 gap-4 bg-stone-400 px-4 py-20 h-3/4" id="vitrina">
   <div class="col-start-1 col-span-10 lg:col-start-3 lg:col-span-6">
     <h1 class="text-3xl lg:text-5xl mb-0 font-serif text-stone-50">IMAGEN <I>del</I> MES</h1>
     <p class="lg:text-md text-sm lg:leading-6 leading-5 mb-2 font-mono text-stone-50">
@@ -275,7 +373,7 @@
       Año<br>
     </p>
   </div>
-</section>
+</section> -->
 
 <section class="grid grid-cols-10 gap-4 bg-indigo-900 px-4 py-20 h-3/4" id="contacto">
   <div class="col-start-1 col-span-10 lg:col-start-3 lg:col-span-3 lg:-mt-0 -mt-5">
