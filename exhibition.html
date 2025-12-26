@@ -7,13 +7,13 @@
 </head>
 <body>
 
-<nav class="bg-transparent p-8 shadow-md">
+<!--<nav class="bg-zinc-700 p-8 shadow-md">
   <div class="container mx-auto flex justify-between items-center">
-    <a href="#" class="text-stone-700 text-2xl font-regular hover:text-blue-400 transition-colors duration-400 font-serif">
-      EXHIBIcion
+    <a href="#" class="text-zinc-100 text-2xl font-regular hover:text-blue-400 transition-colors duration-400 font-serif">
+      FUTURO DISPERSO
     </a>
 
-    <div class="md:hidden">
+     <div class="md:hidden">
       <button id="mobile-menu-button" class="text-stone-700 hover:text-stone-400 focus:outline-none focus:ring-2 focus:ring-gray-400 p-2 rounded-md">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -25,7 +25,7 @@
       <a href="#inicio" class="text-stone-700 hover:text-blue-400 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-700">Inicio</a>
       <a href="#proyectos" class="text-stone-700 hover:text-blue-400 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-700">Proyectos</a>
       <a href="#contacto" class="text-stone-700 hover:text-blue-400 px-3 py-2 rounded-md text-lg font-medium transition-colors duration-700">Contacto</a>
-    </div>
+    </div> 
   </div>
 
   <div id="mobile-menu" class="fixed inset-0 z-50 bg-red-50 md:hidden p-8 flex flex-col justify-center items-center opacity-0 invisible transition-all duration-300 ease-in-out">
@@ -40,15 +40,40 @@
       <a href="#proyectos" class="block text-4xl font-bold text-stone-700 hover:text-blue-400 transition-colors duration-700">Proyectos</a>
       <a href="#contacto" class="block text-4xl font-bold text-stone-700 hover:text-blue-400 transition-colors duration-700">Contacto</a>
     </div>
-  </div>
-</nav>
+  </div> 
+</nav>-->
 
-<section class="grid grid-cols-11 lg:gap-8 gap-8 bg-zinc-500 px-8 lg:py-40 py-20" id="tdg">
+<section class="grid grid-cols-9 gap-3 bg-zinc-200 px-0 py-0 h-dvh items-end" id="intro">
+  <div class="z-1 col-span-3 col-start-2 lg:col-start-5 lg:col-span-2 row-span-3">
+      <div class="">
+        <img src="src/images/logo-fd-25.png" class="" alt="">
+      </div>
+  </div>
+  <div class="z-1 col-span-6 col-start-4 lg:col-start-7 lg:col-span-3 row-span-6">
+      <h1 class="lg:text-4xl md:text-8xl text-2xl lg:mb-2 mb-0 font-serif font-light text-zinc-400">FUTURO DISPERSO</h1>
+      <p class="text-xs leading-6 lg:text-lg mb-8 font-mono text-zinc-700">Laboratorio de artes visuales</p>
+  </div>
+</section>
+
+<section class="grid grid-cols-10 bg-zinc-200 px-4 py-20 h-3/4" id="proceso">
+  <div class="col-start-1 col-span-10 lg:col-start-3 lg:col-span-6">
+    <p class="text-3xl lg:text-5xl mb-8 font-serif text-white">El <i>espíritu del tiempo</i> nos plantea complejos retos ocasionados por las nefastas consecuencias del sistema de organización social actual de la humanidad.
+    </p>
+    <p class="text-3xl lg:text-5xl mb-8 font-serif text-white">Monopolios corporativos, crimen organizado y corrupción estatal, manipulación mediática, vigilancia social, crisis política y ambiental, obsolescencia del sistema educativo, extrema desigualdad social, precarización laboral… son tan solo algunos de los más visibles.
+    </p>
+    <p class="text-3xl lg:text-5xl mb-8 font-serif text-white">Aparte, otro fenómeno, pero no menos importante; el deterioro de la salud mental ocasionado por el ritmo incesante impuesto por la cultura de la información y del rendimiento, en su marcha inspirada por la individualidad consumista.
+    </p>
+    <p class="text-3xl lg:text-5xl mb-8 font-serif text-white">Todos los factores mencionados tienen algún grado de incidencia en los contextos locales en todo el planeta civilizado, sobre todo en espacios urbanizados.
+    </p>
+  </div>
+</section>
+
+<section class="grid grid-cols-11 lg:gap-8 gap-8 bg-zinc-200  lg:py-40 py-20" id="tdg">
 
 <!-- card 4 -->
 
   <div class="col-span-11 lg:col-span-3 lg:col-start-2">
-     <div class="card card-sm bg-base-100 shadow-sm">
+     <div class="card card-sm bg-base-100 shadow-sm rounded-none">
         <figure>
           <a onclick="my_modal_4.showModal()">
           <img
@@ -56,9 +81,9 @@
             alt="image" />
             </a>
         </figure>
-        <div class="card-body">
-          <h2 class="card-title text-sm text-stone-500 font-mono font-light">Cinco intentos de construir cultura</h2>
-          <p class="lg:text-md text-xs lg:leading-5 leading-5 font-mono text-stone-500">
+        <div class="card-body bg-zinc-100">
+          <h2 class="card-title text-sm text-zinc-700 font-mono font-light">Cinco intentos de construir cultura</h2>
+          <p class="lg:text-md text-xs lg:leading-5 leading-5 font-mono text-zinc-700">
             Videoinstalación<br> 
             2024<br>
           </p>
@@ -69,9 +94,9 @@
       </div>
     <!-- modal -->
       <dialog id="my_modal_4" class="modal">
-        <div class="modal-box w-full max-w-6xl p-0 bg-transparent">
-          <div class="col-span-10 lg:col-span-8 lg:col-start-2">
-              <div class="aspect-video w-full rounded-lg shadow-xl overflow-hidden">
+        <div class="modal-box w-full max-w-6xl p-0 bg-transparent rounded-none">
+          <div class=" lg:col-span-8 lg:col-start-2">
+              <div class="aspect-video w-full shadow-xl overflow-hidden">
                   <iframe 
                       class="w-full h-full" 
                       src="https://www.youtube.com/embed/JS7_tOrCzU8?si=10L_yHy41yax-VX4"
@@ -92,7 +117,7 @@
   <!-- card 3 -->
 
   <div class="col-span-11 lg:col-span-3 lg:col-start-2">
-     <div class="card card-sm bg-base-100 shadow-sm">
+     <div class="card card-sm bg-base-100 shadow-sm rounded-none">
         <figure>
           <a onclick="my_modal_3.showModal()">
           <img
@@ -100,9 +125,9 @@
             alt="image" />
             </a>
         </figure>
-        <div class="card-body">
-          <h2 class="card-title text-sm text-stone-500 font-mono font-light">Atención selectiva</h2>
-          <p class="lg:text-md text-xs lg:leading-5 leading-5 font-mono text-stone-500">
+        <div class="card-body bg-zinc-100">
+          <h2 class="card-title text-sm text-zinc-700 font-mono font-light">Atención selectiva</h2>
+          <p class="lg:text-md text-xs lg:leading-5 leading-5 font-mono text-zinc-700">
             Mixta<br> 
             18 x 24 cm (cada pieza)<br>
             2024<br>
@@ -114,20 +139,20 @@
       </div>
     <!-- modal -->
       <dialog id="my_modal_3" class="modal">
-        <div class="modal-box w-full max-w-6xl p-0 bg-transparent">
+        <div class="modal-box w-full max-w-6xl p-0 bg-transparent rounded-none">
           <!-- gallery -->
-          <div class="carousel carousel-start w-full rounded-box shadow-lg">
+          <div class="carousel carousel-start w-full rounded-none shadow-lg">
             <div id="item1" class="carousel-item w-full">
-              <img src="src/images/trazo/atencion-selectiva-01.jpg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+              <img src="src/images/trazo/atencion-selectiva-01.jpg" alt="atención selectiva" class="w-full object-cover" />
             </div>
             <div id="item2" class="carousel-item w-full">
-              <img src="src/images/trazo/atencion-selectiva-02.jpg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+              <img src="src/images/trazo/atencion-selectiva-02.jpg" alt="atención selectiva" class="w-full object-cover" />
             </div>
             <div id="item3" class="carousel-item w-full">
-              <img src="src/images/trazo/atencion-selectiva-03.jpg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+              <img src="src/images/trazo/atencion-selectiva-03.jpg" alt="atención selectiva" class="w-full object-cover" />
             </div>
             <div id="item4" class="carousel-item w-full">
-              <img src="src/images/trazo/atencion-selectiva-04.jpg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+              <img src="src/images/trazo/atencion-selectiva-04.jpg" alt="atención selectiva" class="w-full object-cover" />
             </div>
           </div>
           <!-- <div class="flex justify-center w-full py-2 gap-2 mt-4">
@@ -145,7 +170,7 @@
   <!-- card 2 -->
 
   <div class="col-span-11 lg:col-span-3 lg:col-start-0">
-     <div class="card bg-base-100 shadow-sm">
+     <div class="card bg-base-100 shadow-sm rounded-none">
         <figure>
           <a onclick="my_modal_2.showModal()">
           <img
@@ -153,10 +178,10 @@
             alt="image" />
           </a>
         </figure>
-        <div class="card-body">
-          <h2 class="card-title text-sm text-stone-500 font-mono font-light">La ilusión del cazador</h2>
-          <p class="lg:text-md text-xs leading-5 font-mono text-stone-500">
-            Digital<br>
+        <div class="card-body bg-zinc-100">
+          <h2 class="card-title text-sm text-zinc-700 font-mono font-light">La ilusión del cazador</h2>
+          <p class="lg:text-md text-xs leading-5 font-mono text-zinc-700">
+            Collage digital<br>
             2025<br>
           </p>
           <!-- <div class="card-actions justify-end">
@@ -166,16 +191,16 @@
       </div>
     <!-- modal -->
       <dialog id="my_modal_2" class="modal">
-        <div class="modal-box w-full max-w-6xl p-0 bg-zinc-100">
+        <div class="modal-box w-full max-w-6xl p-0 bg-zinc-100 rounded-none">
             <div class="w-full">
               <img src="src/images/trazo/la-ilusion-del-cazador.jpg" alt="La ilusión del cazador" class="w-full object-cover" />
             </div>
-            <div>
+            <!-- <div>
               <p class="font-mono text-sm px-4 pt-4 pb-10">La distancia entre la mirada y el objeto<br>
                 Digital<br>
                 2025<br>
               </p>
-            </div>
+            </div> -->
         </div>
         <form method="dialog" class="modal-backdrop">
           <button>close</button>
@@ -186,7 +211,7 @@
   <!-- card 1 -->
 
   <div class="col-span-11 lg:col-span-3">
-     <div class="card card-sm bg-base-100 shadow-sm">
+     <div class="card card-sm bg-base-100 shadow-sm rounded-none">
         <figure>
           <a onclick="my_modal_1.showModal()">
           <img
@@ -194,12 +219,12 @@
             alt="image" />
           </a>
         </figure>
-        <div class="card-body">
-          <h2 class="card-title text-sm text-stone-500 font-mono font-light">Pareidolia</h2>
-          <p class="lg:text-md text-xs lg:leading-5 leading-5 mb-4 font-mono text-stone-500">
+        <div class="card-body bg-zinc-100">
+          <h2 class="card-title text-sm text-zinc-700 font-mono font-light">Pareidolia</h2>
+          <p class="lg:text-md text-xs lg:leading-5 leading-5 mb-4 font-mono text-zinc-700">
             Dibujo expandido al material, formas tomadas de vectores y convertidas en objetos geométricos en madera, 
             que recrean rostros de personajes zoantrópicos de rasgos anímicos o sobrenaturales.</p>
-          <p class="lg:text-md text-xs lg:leading-5 leading-5 font-mono text-stone-500">
+          <p class="lg:text-md text-xs lg:leading-5 leading-5 font-mono text-zinc-700">
             Acrílico sobre madera<br> 
             35 x 35 cm (cada pieza)<br>
             2025<br>
@@ -211,20 +236,20 @@
       </div>
     <!-- modal -->
       <dialog id="my_modal_1" class="modal">
-        <div class="modal-box w-full max-w-xl p-0 bg-transparent">
+        <div class="modal-box w-full max-w-xl p-0 bg-transparent rounded-none">
           <!-- gallery -->
-          <div class="carousel carousel-start w-full rounded-box shadow-lg">
+          <div class="carousel carousel-start w-full shadow-lg">
             <div id="item1" class="carousel-item w-full">
-              <img src="src/images/trazo/p-01.jpeg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+              <img src="src/images/trazo/p-01.jpeg" alt="pareidolia" class="w-full object-cover" />
             </div>
             <div id="item2" class="carousel-item w-full">
-              <img src="src/images/trazo/p-02.jpeg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+              <img src="src/images/trazo/p-02.jpeg" alt="pareidolia" class="w-full object-cover" />
             </div>
             <div id="item3" class="carousel-item w-full">
-              <img src="src/images/trazo/p-03.jpeg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+              <img src="src/images/trazo/p-03.jpeg" alt="pareidolia" class="w-full object-cover" />
             </div>
             <div id="item4" class="carousel-item w-full">
-              <img src="src/images/trazo/p-04.jpeg" alt="La Sabiduría de la serpiente" class="w-full object-cover" />
+              <img src="src/images/trazo/p-04.jpeg" alt="pareidolia" class="w-full object-cover" />
             </div>
           </div>
           <!-- <div class="flex justify-center w-full py-2 gap-2 mt-4">
@@ -244,118 +269,15 @@
 
 <!-- FIN -->
 
-<section class="grid grid-cols-10 bg-indigo-500 px-4 py-20 h-3/4" id="proceso">
+<section class="grid grid-cols-10 bg-zinc-600 px-4 py-20 h-3/4" id="proceso">
   <div class="col-start-1 col-span-10 lg:col-start-3 lg:col-span-6">
-    <p class="text-3xl lg:text-5xl mb-8 font-serif text-stone-50">En cada proceso se utiliza la imagen, el lenguaje o la materialidad para dar respuesta a las necesidades de un problema de proyección de diseño, considerando el componente psicológico y la funcionalidad para determinar el resultado final. La estética se deriva de la lógica funcional y los estándares de la comunicación visual, enmarcada un contexto cultural específico.</p>
+    <p class="text-3xl lg:text-5xl mb-8 font-serif text-zinc-400">En la retorta, el ánimo cuestionador identifica aquellas particularidades del establecimiento socio-cultural y político, y la práctica las lleva al plano del lenguaje de la plástica, dándoles un lugar en una experiencia o en un objeto de valor estético.</p>
+    <p class="text-3xl lg:text-5xl mb-8 font-serif text-zinc-400">Se asume un interesante juego de creación, donde la articulación de significados y significantes facilita dos cosas: uno, la capacidad de fijarse en situaciones que afectan a la gente pero que podrían pasar desapercibidas bajo el manto de la cotidianidad o de la cultura. Dos, encontrar en ellas juegos de contrastes relevantes, curiosos o divertidos. 
+    </p>
   </div>
 </section>
 
-<!-- <section class="grid grid-cols-10 bg-stone-50 py-10 bg-[url(../src/images/-crudo.jpg)] bg-cover bg-center bg-repeat lg:bg-fixed" id="resultados">
-  <div class="col-start-1 col-span-10 lg:col-start-3 lg:col-span-6 px-4 pt-5">
-      <h2 class="text-xl text-left text-stone-700 font-light font-mono mb-10">Resultados de procesos de diseño:
-      </h2>
-</div>
-    <div class="collapse collapse-arrow bg-transparent mb-4 lg:col-start-3 col-start-1 lg:col-span-6 col-span-10 rounded-box" id="...">
-          <input type="checkbox" /> 
-                <div class="collapse-title text-stone-700">
-                  <h1 class="font-mono text-sm font-light text-left tracking-widest"> DISEÑO EDITORIAL</h1> <br> <h1 class="font-mono text-xl">Laboratorio de periodismo ciudadano</h1>
-                </div>
-          <div class="collapse-content"> 
-              <div class="...">
-                <p class="font-mono text-sm text-left leading-6 text-stone-700">
-                    Una apuesta para potenciar 
-                    las capacidades narrativas e incentivar el rigor y la ética periodística.  
-                    También es una oportunidad para intercambiar conocimientos, problematizar hechos y recoger 
-                    la riqueza cultural local en una aproximación al periodismo móvil o <i>mobile journalism (MOJO)</i>
-                     soportado en herramientas básicas como teléfonos inteligentes e internet.
-                </p>
-                <p class="py-6 font-mono text-sm text-left leading-6 text-stone-700">
-                    Como resultado de la implementación de la acción se diseñó un producto comunicativo paa reseñar la experiencia,
-                    teniendo como inspiración la fragmentación y la estética del <i>copy and paste</i> para organizar la información
-                    en un formato ágil y práctico para difusión en medios digitales.
-                <a class="underline bg-gray-100 p-1" href=*.pdf download> Laboratorio de Periodismo Ciudadano con Enfoque Cultural.pdf</a>
-                </p>
-              </div>
-              <div class="grid lg:grid-cols-3 grid-col-1 gap-4">
-                  <div class="..."><img src="src/images/periodismo-cultural/lab-periodismo-1.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/periodismo-cultural/lab-periodismo-2.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/periodismo-cultural/lab-periodismo-3.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/periodismo-cultural/lab-periodismo-4.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/periodismo-cultural/lab-periodismo-5.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/periodismo-cultural/lab-periodismo-6.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/periodismo-cultural/lab-periodismo-7.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/periodismo-cultural/lab-periodismo-8.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/periodismo-cultural/lab-periodismo-9.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/periodismo-cultural/lab-periodismo-10.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/periodismo-cultural/lab-periodismo-11.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/periodismo-cultural/lab-periodismo-12.jpg" alt=""></div>
-              </div>
-          </div>
-    </div>
-
-    <div class="collapse collapse-arrow bg-transparent mb-4 lg:col-start-3 col-start-1 lg:col-span-6 col-span-10 rounded-box" id="...">
-          <input type="checkbox" /> 
-                <div class="collapse-title text-stone-700">
-                  <h1 class="font-mono text-sm font-light text-left tracking-widest"> IDENTIDAD VISUAL</h1> <br> <h1 class="font-mono text-xl">Biblioteca del caribe</h1>
-                </div>
-          <div class="collapse-content"> 
-              <div class="...">
-                <p class="font-mono text-sm text-left leading-6 text-stone-700">
-                  La editorial de la <a class="underline bg-gray-100 p-1" href="https://editorial.uninorte.edu.co" target="_blank">Universidad del Norte</a> diseñó la colección: 
-                  <i>Biblioteca del Caribe</i> para localizar y promover la producción literaria del caribe con una bandera propia.</p>
-                <p class="py-6 font-mono text-sm text-left leading-6 text-stone-700">                  
-                      El proyecto consistió en crear las cubiertas, los distintivos visuales y la iconografía general 
-                      para la colección, así como la formulación de normas y condiciones relacionadas con las estructuras 
-                      que sostienen en su lugar cada elemento de la apariencia visual de la colección impresa. 
-                </p>
-              </div>
-              <div class="grid lg:grid-cols-3 grid-col-1 gap-4">
-                  <div class="..."><img src="src/images/bdc/bdc-1.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/bdc/bdc-2.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/bdc/bdc-3.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/bdc/bdc-4.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/bdc/bdc-5.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/bdc/bdc-6.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/bdc/bdc-7.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/bdc/bdc-8.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/bdc/bdc-9.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/bdc/bdc-10.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/bdc/bdc-11.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/bdc/bdc-12.jpg" alt=""></div>
-              </div>
-          </div>
-    </div>
-
-    <div class="collapse collapse-arrow bg-transparent mb-4 lg:col-start-3 col-start-1 lg:col-span-6 col-span-10 rounded-box" id="...">
-          <input type="checkbox" /> 
-                <div class="collapse-title text-stone-700">
-                  <h1 class="font-mono text-sm font-light text-left tracking-widest">ILUSTRACIÓN</h1> <br> <h1 class="font-mono text-xl">Contexto</h1>
-                </div>
-          <div class="collapse-content"> 
-              <div class="...">
-                <p class="py-6 font-mono text-sm text-left leading-6 text-stone-700">
-                      La imagen como centro de la atención de los sentidos. Esta es una selección de imágenes digitales realizados a la medida de artículos periodísticos publicados en <a class="underline bg-gray-100 p-1" href="https://contextomedia.com/" target="_blank">contexto</a> en el transcurso de 5 años.
-                </p>
-              </div>
-              <div class="grid lg:grid-cols-3 grid-col-1 gap-4">
-                  <div class="..."><img src="src/images/contexto/ctx-1.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/contexto/ctx-2.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/contexto/ctx-3.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/contexto/ctx-4.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/contexto/ctx-5.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/contexto/ctx-6.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/contexto/ctx-7.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/contexto/ctx-8.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/contexto/ctx-9.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/contexto/ctx-10.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/contexto/ctx-11.jpg" alt=""></div>
-                  <div class="..."><img src="src/images/contexto/ctx-12.jpg" alt=""></div>
-              </div>
-          </div>
-    </div>
-</section> -->
-
-<!-- <section class="grid grid-cols-10 gap-4 bg-stone-400 px-4 py-20 h-3/4" id="vitrina">
+<!-- <section class="grid grid-cols-10 gap-4 bg-zinc-800 px-4 py-20 h-3/4" id="vitrina">
   <div class="col-start-1 col-span-10 lg:col-start-3 lg:col-span-6">
     <h1 class="text-3xl lg:text-5xl mb-0 font-serif text-stone-50">IMAGEN <I>del</I> MES</h1>
     <p class="lg:text-md text-sm lg:leading-6 leading-5 mb-2 font-mono text-stone-50">
@@ -375,23 +297,21 @@
   </div>
 </section> -->
 
-<section class="grid grid-cols-10 gap-4 bg-indigo-900 px-4 py-20 h-3/4" id="contacto">
+<section class="grid grid-cols-10 gap-4 bg-zinc-900 px-4 py-20 h-3/4" id="contacto">
   <div class="col-start-1 col-span-10 lg:col-start-3 lg:col-span-3 lg:-mt-0 -mt-5">
-    <h1 class="text-2xl lg:text-3xl mb-4 font-serif italic text-stone-100">El oficio de transformar la inspiración en un resultado coherente y bien ejecutado.</h1>
-    <p class="lg:text-md text-sm lg:leading-6 leading-5 mb-4 font-mono text-stone-100"><i>Trazo de guía</i> es el resultado del trabajo gráfico y creativo de Guillermo Solano, diseñador gráfico y artista visual.</p>
+    <p class="lg:text-md text-sm lg:leading-6 leading-5 mb-4 font-mono text-zinc-100"><i>Futuro Disperso</i> es el resultado del trabajo artístico de Guillermo Solano, diseñador gráfico y artista visual.</p>
   </div>
   <div class="col-start-6 col-span-5 lg:col-start-7 lg:col-span-1">
     <img src="src/images/retrato.gif" alt="">
   </div>
   <div class="col-start-3 col-span-10 lg:col-start-8 lg:col-span-2 flex flex-col items-start">
     <a href="https://www.instagram.com/elsolardelosdistraidos/" class="leading-5 mb-2 font-mono text-stone-50 hover:text-blue-400">Insta</a>
-    <a href="#" class="leading-5 mb-2 font-mono text-stone-50 hover:text-blue-400">Blog</a>
   </div>
   
 </section>
 
 
-    <footer class="bg-indigo-950 font-mono text-xs text-stone-50 p-6 text-center mt-auto">
+    <footer class="bg-zinc-950 font-mono text-xs text-stone-50 p-6 text-center mt-auto">
         <p>&copy; 2025 Guillermo Solano. Todos los derechos reservados.</p>
     </footer>
 
