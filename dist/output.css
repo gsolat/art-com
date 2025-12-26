@@ -2112,6 +2112,16 @@ video {
   background-color: rgb(82 82 91 / var(--tw-bg-opacity));
 }
 
+.bg-zinc-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(161 161 170 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\.\.\/src\/images\/pelicano-gif\.gif\)\] {
   background-image: url(../src/images/pelicano-gif.gif);
 }
@@ -2621,6 +2631,10 @@ video {
     text-align: left;
   }
 
+  .lg\:font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2652,5 +2666,10 @@ video {
 
   .lg\:leading-6 {
     line-height: 1.5rem;
+  }
+
+  .lg\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
