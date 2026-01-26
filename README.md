@@ -1,4 +1,4 @@
-# artcom
-<a href="https://guillermosolano.co/art-com/futurodisperso.html">Futuro Disperso</a>
 
-<a href="futurodisperso.html">Portafolio visual</a>
+<a href="trazodeguia.html">Trazo de guía - Portafolio de Diseño gráfico</a>
+
+<a href="futurodisperso.html">Futuro Disperso - Laboratorio Visual</a>
