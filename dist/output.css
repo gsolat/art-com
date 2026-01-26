@@ -2286,6 +2286,11 @@ video {
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
 }
 
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\.\.\/src\/images\/pelicano-gif\.gif\)\] {
   background-image: url(../src/images/pelicano-gif.gif);
 }
@@ -2394,6 +2399,14 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .text-left {
